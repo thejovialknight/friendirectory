@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>friendirectory | login</title>
+        <link href="style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="./index.html">home</a>
+                <span>|</span>
+                <a href="./about.html">about</a>
+                <span>|</span>
+                <a href="./directory.html">directory</a>
+                <span>|</span>
+                <a href="./login.html">login</a>
+            </nav>
+            <h1>login</h1>
+        </header>
+        <main>
+            <form>
+                <label for="user-name">username</label>
+                <input type="text" name="username" id="username" placeholder="username here..." minlength="3" maxlength="15" pattern="[a-zA-Z0-9]+" required/>
+                <br>
+                <br>
+                <label for="user-pass">password</label>
+                <input type="password" name="password" id="password" placeholder="password here..." required/>
+                <br>
+                <br>
+                <input type="submit" value="login">
+            </form>
+            <h2>or register</h2>
+            <form>
+                <label for="username">username</label>
+                <input type="text" name="username" id="username" placeholder="username here..." minlength="3" maxlength="15" pattern="[a-zA-Z0-9]+" required/>
+                <br>
+                <br>
+                <label for="password">password</label>
+                <input type="password" name="password" id="password" placeholder="password here..." required/>
+                <br>
+                <br>
+                <label for="bio">bio</label>
+                <br>
+                <textarea type="bio" name="bio" id="bio" rows="10" cols="40" placeholder="bio here..." required></textarea>
+                <br>
+                <br>
+                <input type="submit" value="register">
+            </form>
+        </main>
+    </body>
+</html
