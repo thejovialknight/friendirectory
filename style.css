@@ -1,7 +1,15 @@
 body {
+    font-family: "Courier";
     background: rgb(200, 200, 200);
     color: rgb(50, 50, 50);
-    font-family: 'Courier', sans-serif;
+}
+
+h1 {
+    border: 2px solid rgb(255, 0, 100);
+    border-radius: 20px;
+    background-color: rgb(255, 0, 100);
+    width: 20%;
+    padding: 3px 20px;
 }
 
 table {
@@ -11,12 +19,12 @@ table {
     overflow-y: scroll;
     position: static;
     width: 100%;
+    border-radius: 10px;
 }
 
 thead th {
     background: #545454;
     color: rgb(200, 200, 200);
-    font-family: 'Courier', sans-serif;
     font-size: 18px;
     font-weight: 100;
     letter-spacing: 2px;
@@ -31,10 +39,30 @@ tr {
 }
 
 th, td {
-    font-family: 'Courier', sans-serif;
     font-size: 18px;
     font-weight: 400;
     padding: 20px;
     text-align: left;
     width: 33.3333%;
+    border-radius: 10px;
+}
+
+[href] {
+    color: rgb(127, 127, 127);
+}
+
+[href]:hover {
+    color: rgb(255, 0, 100);
+}
+
+input[type*="submit"] {
+    color: rgb(255, 255, 255);
+    background-color: #545454;
+    border-radius: 10px;
+    padding: 5px 15px;
+    border-style: none;
+}
+
+input[type*="submit"]:hover {
+    background-color: rgb(255, 0, 100);
 }

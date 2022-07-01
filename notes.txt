@@ -1,0 +1,182 @@
+6/30/2022
+
+CSS: Cascading stylesheets
+Linked to html with <link href="./file.css" rel="stylesheet">
+Can be inlined in head with <style> element, or inlined in element with style attribute.
+
+Selectors
+Selectors are used to decide which elements have a style applied to them.
+
+Type Selectors
+p {
+    color: green;
+}
+This is a selector for element type <p>
+
+Universal selector 
+* {
+    font-family: Verdana;
+}
+Selects all elements of any type.
+
+Class selector
+HTML elements can have a class="grandpa" attribute, which is referenced by CSS by:
+.grandpa {
+    font-weight: 200;
+}
+
+Multiple classes
+<p class="grandpa ants">
+.grandpa {
+    font-weight: 200;
+}
+.ants {
+    text-transform: lowercase;
+}
+
+ID Selectors
+Similar to class, but can only be used once per page, and can only be a single value.
+<h1 id="grandma">
+#grandma {
+    font-family: Courier;
+}
+
+Attribute selector
+[href] {
+    color: #eee;
+}
+img[src*='panzer'] {
+    height: 100px;
+}
+That last one targets all img elements in which the src contains the string "panzer"
+
+Psuedo class selectors 
+p:hover {
+    background-color: lime;
+}
+Also includes :focus, :visited, :disabled, :active
+
+Specificity
+The order by which browser decides which styles will be displayed.
+Best practice is to style elements with lowest specificity degree by default.
+The order is as follows: id, class, type.
+So this means, start out using a type selector, if you need more specific, use class, and then id.
+
+Chaining
+h1.special {
+    Only selects h1 elements that have the special class. Won't touch non h1 specials, presumably.
+}
+
+Descendant combinator
+<ul class='main-list'>
+    <li></li> etc
+</ul>
+.main-list li {
+    will select all li elements that are nested within elements of class main-list.
+}
+li h4 {
+    will select all h4 elements inside of li elements.
+}
+
+Multiple selectors
+h1 .grandpa {
+    Will select all h1 elements and all elements of class grandpa
+}
+
+The Box Model
+Everything lives in a box.
+Background color changes the color of this box.
+Boxes have the following aspects:
+    Dimensions:
+    Borders:
+    Paddings:
+    Margins:
+They also have the following properties:
+    width and height: w and h of content area
+    padding: space between content area and border
+    border: thickness and style of border surrounding content and padding
+    margin: space between border and outside edge of element
+    overflow: behavior if content overflows (scroll, hidden, auto, clip, visible)
+
+px
+Setting values by pixel makes it the same size on all devices. Yikes!
+
+=================
+
+6/29/2022
+
+ARPANET
+Precursor to the internet. Connected supercomputing centers run by the government and universities.
+
+TCP/IP (transmission control protocol/internet protocol)
+Created in the 1970s. Standards for transferring data. Adopted in the early 1980s.
+
+Internet vs WWW
+The internet is the network between computing devices, the world wide web is a collection
+of interlinked websites and resources to browse.
+
+Clients and Servers
+Yep.
+
+HTTP Status Codes
+200: OK: Request succeeded
+301: Moved Permenantly: Resources has been moved and client redirected
+404: Not found: Resource not found
+500: Internal Server Error: Unexpected error.
+
+Steps to seeing a page
+1. Server processes request and sends back HTML file to client.
+2. Browser searches for html elements and makes additional HTTP requests as needed
+    - CSS stylesheets
+    - Images and videos
+    - Javascript files
+without javascript the webpage is known as a static webpage.
+
+Web 2.0
+A dynamic user experience responds to input without forcing page reload.
+Emphasis on user generated content and social sharing.
+
+Technical advances that led to web 2.0
+jQuery: first js framework that could fetch data while webpage was running.
+Rise of web frameworks that connected to database like Spring, Django, and Ruby-On-Rails.
+
+Current trends
+Responsive web design: CSS< media queries, relative units(?). Can adjust based on size of window.
+Mobile apps and devices: more likely to access internet via apps rather than browser.
+
+HTML
+The skeleton of all web pages. The structure to the content.
+
+CSS
+The presentation and styling of the HTML content. Linked to html with a <link> element.
+
+Javascript
+Any site that isn't static probably uses js.
+    - Popup ads 
+    - Animated graphics
+    - Interactive audio and video 
+    - Maps 
+
+Events
+JS can react to browser events in real time.
+    - User clicking button
+    - User pressing key
+    - Video file loaded
+    - Resize window
+    - Hovering over text
+
+JS in HTML
+Can be directly embedded with <script> tag.
+HTML attributes can set events: <button onclick="changeColor()">Text</button>, where changeColor() is a JS function within a script.
+
+SQL: Structured query language
+Stores information in tables, organized in rows and columns.
+SELECT * FROM users = select all (*) data from users table.
+
+Back-end vs Front-end
+Back end happens on remote server you can't see. Formatting and storing data, making it scaleable.
+Front end has to do with information display to users. Gets data from back end and displays to user.
+
+MDN: Mozilla Developer Network 
+Widely accredited resource for looking up information on all sorts of web topics. Should perhaps
+be first choice when wanting to know more about a topic.
