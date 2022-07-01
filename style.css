@@ -1,15 +1,11 @@
 body {
     font-family: "Courier";
     background: rgb(200, 200, 200);
-    color: rgb(50, 50, 50);
+    color: #545454;
 }
 
-h1 {
-    border: 2px solid rgb(255, 0, 100);
-    border-radius: 20px;
-    background-color: rgb(255, 0, 100);
-    width: 20%;
-    padding: 3px 20px;
+h1, h2 {
+    color: #545454;
 }
 
 table {
@@ -47,8 +43,24 @@ th, td {
     border-radius: 10px;
 }
 
+[href].nav-item {
+    text-decoration: none;
+    color:#FFF;
+    border: 2px solid rgb(255, 0, 100);
+    border-radius: 20px;
+    background-color: rgb(255, 0, 100);
+    width: 20%;
+    padding: 3px 20px;
+}
+
+[href].nav-item:hover {
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    border-color: #FFF;
+}
+
 [href] {
-    color: rgb(127, 127, 127);
+    color: rgb(26, 26, 26);
 }
 
 [href]:hover {
